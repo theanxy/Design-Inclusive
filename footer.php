@@ -10,7 +10,8 @@
 </div> <!-- /footer -->
 
 <!-- jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui-1.8.20.custom.min.js"></script>
 
 <script>
 $(document).ready(function() { 
@@ -39,6 +40,9 @@ $(document).ready(function() {
 		$('body').toggleClass('expanded');
 		return false;
 	});
+	
+	// slider
+	$("#slider").slider();
 }); 
 </script>
 

@@ -23,6 +23,8 @@
 
 <iframe src="<?php echo get_template_directory_uri(); ?>/preview.php?p=<?php echo $post->ID ?>"></iframe>
 
+<div id="slider"></div>
+
 <div id="pattern" class="mod group">
 			<h3 class="label">Pattern</h3> 
 			
