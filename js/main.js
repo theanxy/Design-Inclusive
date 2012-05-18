@@ -34,4 +34,11 @@ $(document).ready(function() {
 		// console.log(ui.value);
 		$('iframe').css('max-width', ui.value);
 	});
+	
+	// calculating preview width
+	$('#width').html('500px');
+	$('iframe').resize(function() {
+		$('#width').html($('iframe').css('width'));
+	});
+	
 });

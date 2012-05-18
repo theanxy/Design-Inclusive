@@ -22,6 +22,7 @@
 </style>
 
 <div id="slider"></div>
+<div id="width"></div>
 
 <iframe src="<?php echo get_template_directory_uri(); ?>/preview.php?p=<?php echo $post->ID ?>"></iframe>
 
