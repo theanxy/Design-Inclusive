@@ -6,7 +6,7 @@ $(document).ready(function() {
 	});
 	$('#style textarea').live('keyup', function(e) {
 		$('div.main style').html($(this).val());
-		$('iframe').contents().find('style').html($(this).val());
+		$('iframe').contents().find('#preview').html($(this).val());
 	});
 	
 	// auto-select code in textarea when clipboard icon is clicked
@@ -28,7 +28,7 @@ $(document).ready(function() {
 	// slider
 	var iframeWidth = $('iframe').css('width');
 	iframeWidth = parseInt(iframeWidth);
-	$("#slider").slider({ min: 0, max: iframeWidth, value: iframeWidth });
+	$("#slider").slider({ min: 160, max: iframeWidth, value: iframeWidth });
 	
 	$("#slider").bind( "slide", function(event, ui) {
 		// console.log(ui.value);

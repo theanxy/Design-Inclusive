@@ -127,7 +127,7 @@ div.wrap {
 	}
 div.main {
 	margin-left: 160px;
-	padding: 0 20px;
+	padding: 50px 20px 0;
 	.transition(margin, .4s, ease-in-out);
 	}
 body.expanded div.main {
@@ -155,16 +155,13 @@ body.expanded header[role="banner"] {
 #logo {
 	display: block;
 	min-height: 46px;
-	padding: 0 0 0 40px;
 	font-size: 25px;
 	line-height: 46px;
 	white-space: nowrap;
 	color: @text-color;
-	background: url(../images/pear.png) no-repeat 0 50%;
 	overflow: hidden;
 	}
 #logo em {
-	padding: 0 0 0 0;
 	font-style: normal;
 	color: #91969a;
 	.transition(opacity, .4s, ease);
@@ -173,15 +170,29 @@ body.expanded header[role="banner"] {
 /* iframe preview
 --------------------------------------------- */
 
-iframe {
-	margin: 0 auto;
-	border: 1px solid #f00;
+#slider {
+	position: absolute;
+	top: -100px;
+	right: 100px;
+	}
+
+#iframe {
+	margin: 0 20px;
+	}
+#iframe iframe {
+	display: block;
 	width: 100%;
-}
+	margin: 0 auto;
+	}
 #slider {
 	width: 200px;
 	margin: 3em auto;
-}
+	}
+#width {
+	position: absolute;
+	top: -50px;
+	right: 30px;
+	}
 
 /* main styles 
 --------------------------------------------- */
@@ -232,6 +243,9 @@ div.mod:hover a.clip {
 	}
 div.mod:hover a.clip:hover {
 	opacity: 1;
+	}
+div#pattern {
+	display: none;
 	}
 div#pattern.mod div#pattern-wrap {
 	clear: left;
@@ -292,7 +306,7 @@ div.mod textarea.mod-ta {
 
 #nav {
 	position: absolute;
-	top: 0;
+	top: 220px;
 	left: 0;
 	width: 160px;
 	margin: 0 0 15px 0;

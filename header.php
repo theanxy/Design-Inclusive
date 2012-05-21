@@ -25,9 +25,8 @@
 
 <header role="banner" class="group">
 	<a href="<?php bloginfo('siteurl'); ?>/" id="logo">
-		Pears <em>are common patterns of markup &amp; style</em>
+		Design inclusive <em>.com</em>
 	</a>
 </header>
 
 <div class="wrap group">
-	<div class="main" role="main">
