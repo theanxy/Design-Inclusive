@@ -2,7 +2,7 @@ $(document).ready(function() {
 	// update rendered pattern when user edits the textareas
 	$('#markup textarea').live('keyup', function(e) {
 		$('#pattern-wrap').html($(this).val());
-		$('iframe').contents().find('body').html($(this).val());
+		$('iframe').contents().find('.wrap').html($(this).val());
 	});
 	$('#style textarea').live('keyup', function(e) {
 		$('div.main style').html($(this).val());

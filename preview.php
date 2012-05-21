@@ -11,6 +11,9 @@ require_once('../../../wp-load.php');
 	body {
 		background: #fff !important;
 	}
+	.wrap {
+		padding: 20px;
+	}
 </style>
 <style id="preview" type="text/css">
 <?php $key="css"; echo get_post_meta($_GET['p'], $key, true); ?>
@@ -20,6 +23,8 @@ require_once('../../../wp-load.php');
 </head>
 
 <body>
-<?php $key="html"; echo get_post_meta($_GET['p'], $key, true); ?>
+	<div class="wrap">
+		<?php $key="html"; echo get_post_meta($_GET['p'], $key, true); ?>
+	</div><!-- /wrap -->
 </body>
 </html>
