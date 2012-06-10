@@ -25,13 +25,14 @@
 
 <header role="banner" class="group">
 	<a href="<?php bloginfo('siteurl'); ?>/" id="logo">
-		Design inclusive <em>.com</em>
+		Design inclusive
 	</a>
 	
 	<div id="width-control">
 		<div id="slider"></div>
 		<span></span>
 	</div>
+
 </header>
 
 <div class="wrap group">

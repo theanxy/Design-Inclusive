@@ -26,5 +26,16 @@ require_once('../../../wp-load.php');
 	<div class="wrap">
 		<?php $key="html"; echo get_post_meta($_GET['p'], $key, true); ?>
 	</div><!-- /wrap -->
+	
+<script type="text/javascript">
+	$(document).ready(function() { 
+		// calculating preview width
+		$('#width-control span', top.document).html($(window).width() + ' px');
+	});
+
+	$(window).resize(function() {
+		$('#width-control span', top.document).html($(window).width() + ' px');
+	});
+</script>
 </body>
 </html>

@@ -38,6 +38,13 @@
 		</div>
 		
 		<div class="group">
+			<?php if($post->post_content != "") {?>
+			<div id="pattern-notes" class="mod">
+				<h3 class="label">Notes</h3>
+				<?php the_content(); ?>
+			</div>
+			<?php } ?>
+			
 			<div id="markup" class="mod">
 				<h3 class="label">HTML</h3> <a href="#" class="clip" title="select code for copying"><img src="<?php bloginfo('template_directory'); ?>/images/icon-copy.png" alt="copy" /></a>
 				<textarea class="mod-ta">
@@ -52,12 +59,5 @@
 				</textarea>
 			</div>
 		</div>
-		
-		<?php if($post->post_content != "") {?>
-		<div id="pattern-notes" class="mod">
-			<h3 class="label">Notes</h3>
-			<?php the_content(); ?>
-		</div>
-		<?php } ?>
 
 <?php endwhile; // end of the loop. ?>

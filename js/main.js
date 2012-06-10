@@ -35,10 +35,4 @@ $(document).ready(function() {
 		$('iframe').css('max-width', ui.value);
 	});
 	
-	// calculating preview width
-	$('#width-control span').html('500px');
-	$('iframe').resize(function() {
-		$('#width').html($('iframe').css('width'));
-	});
-	
 });

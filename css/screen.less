@@ -96,6 +96,11 @@ table {
 :focus {
 	outline: none;
 	}
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+	}
 
 /* general styles 
 --------------------------------------------- */
@@ -149,15 +154,12 @@ header[role="banner"] {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	padding: 0 20px;
 	z-index: 100;
-/*	margin: 15px 20px 15px 20px;*/
 	margin: 0 0 40px;
-	border-bottom: 1px solid rgba(0,0,0,.2);
-	.transition(margin, .4s, ease-in-out);
+/*	.transition(margin, .4s, ease-in-out);*/
 	background: #fff;
-	}
-body.expanded header[role="banner"] {
-	margin-left: 35px;
+	box-shadow: 0 5px 8px rgba(0,0,0,.2);
 	}
 #logo {
 	float: left;
@@ -167,11 +169,6 @@ body.expanded header[role="banner"] {
 	white-space: nowrap;
 	color: @text-color;
 	overflow: hidden;
-	}
-#logo em {
-	font-style: normal;
-	color: #91969a;
-	.transition(opacity, .4s, ease);
 	}
 
 #width-control {
@@ -192,7 +189,7 @@ body.expanded header[role="banner"] {
 --------------------------------------------- */
 
 #iframe {
-	margin: 100px 20px 0;
+	margin: 80px 20px 0;
 	}
 #iframe iframe {
 	display: block;
@@ -310,7 +307,7 @@ div.mod textarea.mod-ta {
 
 #nav {
 	position: absolute;
-	top: 350px;
+	top: 320px;
 	left: 0;
 	width: 160px;
 	margin: 0 0 15px 0;
@@ -442,9 +439,6 @@ a img {
 --------------------------------------------- */
 
 @media screen and (max-width: 700px) {
-	#logo em {
-		opacity: 0;
-		}
 	div.main {
 		margin-left: 0;
 		padding: 20px 10px 0;
