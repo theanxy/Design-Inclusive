@@ -17,9 +17,6 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-<div id="slider"></div>
-<div id="width"></div>
-
 <div id="iframe">
 	<iframe src="<?php echo get_template_directory_uri(); ?>/preview.php?p=<?php echo $post->ID ?>"></iframe>
 </div><!-- /iframe -->

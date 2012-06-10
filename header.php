@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pears <?php wp_title('/', true, 'left'); ?></title>
+<title>Design Inclusive <?php wp_title('/', true, 'left'); ?></title>
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
@@ -27,6 +27,11 @@
 	<a href="<?php bloginfo('siteurl'); ?>/" id="logo">
 		Design inclusive <em>.com</em>
 	</a>
+	
+	<div id="width-control">
+		<div id="slider"></div>
+		<span></span>
+	</div>
 </header>
 
 <div class="wrap group">

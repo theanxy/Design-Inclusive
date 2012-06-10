@@ -36,7 +36,7 @@ $(document).ready(function() {
 	});
 	
 	// calculating preview width
-	$('#width').html('500px');
+	$('#width-control span').html('500px');
 	$('iframe').resize(function() {
 		$('#width').html($('iframe').css('width'));
 	});

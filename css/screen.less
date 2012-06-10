@@ -146,14 +146,21 @@ body.expanded div.main {
 --------------------------------------------- */
 
 header[role="banner"] {
-	margin: 15px 20px 15px 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+/*	margin: 15px 20px 15px 20px;*/
+	margin: 0 0 40px;
+	border-bottom: 1px solid rgba(0,0,0,.2);
 	.transition(margin, .4s, ease-in-out);
+	background: #fff;
 	}
 body.expanded header[role="banner"] {
 	margin-left: 35px;
 	}
 #logo {
-	display: block;
+	float: left;
 	min-height: 46px;
 	font-size: 25px;
 	line-height: 46px;
@@ -167,17 +174,25 @@ body.expanded header[role="banner"] {
 	.transition(opacity, .4s, ease);
 	}
 
+#width-control {
+	margin: 20px auto 0;
+	width: 280px;
+	
+	}
+#slider {
+	width: 200px;
+	float: left;
+}
+#width-control span {
+	float: right;
+	}
+
+
 /* iframe preview
 --------------------------------------------- */
 
-#slider {
-	position: absolute;
-	top: -100px;
-	right: 100px;
-	}
-
 #iframe {
-	margin: 0 20px;
+	margin: 100px 20px 0;
 	}
 #iframe iframe {
 	display: block;
@@ -185,16 +200,7 @@ body.expanded header[role="banner"] {
 	margin: 0 auto;
 	height: 300px;
 	}
-#slider {
-	width: 200px;
-	margin: 3em auto;
-	}
-#width {
-	position: absolute;
-	top: -50px;
-	right: 30px;
-	}
-
+	
 /* main styles 
 --------------------------------------------- */
 
@@ -207,8 +213,8 @@ div.mod {
 	.box-shadow(1px, 1px, 2px, rgba(0,0,0,.1));
 	}
 div.mod h3.label {
-	float: left;
-	margin: 0 0 10px -20px;
+	float: right;
+	margin: -20px 20px 0 0;
 	padding: 6px 10px;
 	font-size: @font-small;
 	font-weight: normal;
@@ -216,9 +222,6 @@ div.mod h3.label {
 	text-transform: uppercase;
 	color: #fff;
 	background: #a1cf32;
-	.rounded(4px);
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
 	}
 div.mod h3.label a {
 	color: #fff;
@@ -313,9 +316,6 @@ div.mod textarea.mod-ta {
 	margin: 0 0 15px 0;
 	padding: 20px 0;
 	background: #575d60;
-	.rounded;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
 	-webkit-transition: left .4s ease-in-out;
 	-moz-transition: left .4s ease-in-out;
 	-o-transition: left .4s ease-in-out;
