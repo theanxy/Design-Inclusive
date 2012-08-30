@@ -18,7 +18,7 @@ require_once('../../../wp-load.php');
 <style id="preview" type="text/css">
 <?php $key="css"; echo get_post_meta($_GET['p'], $key, true); ?>
 </style>
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/less.js"></script>
 </head>
 

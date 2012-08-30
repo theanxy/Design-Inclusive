@@ -17,6 +17,11 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
+<header>
+	<h3 class="label">Pattern</h3> 
+	<h4><?php the_category(' '); ?> <span class="sep">&rarr;</span> <?php the_title(); ?></h4>
+</header>
+
 <div id="iframe">
 	<iframe src="<?php echo get_template_directory_uri(); ?>/preview.php?p=<?php echo $post->ID ?>"></iframe>
 </div><!-- /iframe -->
@@ -27,20 +32,10 @@
 <?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
 </style>
 
-<div id="pattern" class="mod group">
-			<h3 class="label">Pattern</h3> 
-			
-			<h4><?php the_category(' '); ?> <span class="sep">&rarr;</span> <?php the_title(); ?></h4>
-			
-			<div id="pattern-wrap" class="group">
-<?php $key="html"; echo get_post_meta($post->ID, $key, true); ?>
-			</div>
-		</div>
-		
 		<div class="group">
 			<?php if($post->post_content != "") {?>
 			<div id="pattern-notes" class="mod">
-				<h3 class="label">Notes</h3>
+				<h3 class="label">Uwagi</h3>
 				<?php the_content(); ?>
 			</div>
 			<?php } ?>
