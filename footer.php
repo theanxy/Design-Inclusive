@@ -9,7 +9,7 @@
 
 <!-- jQuery -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.8.1.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui-1.8.20.custom.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui-1.8.23.custom.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <!-- c(~) -->
 </body>
