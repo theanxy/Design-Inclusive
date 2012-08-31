@@ -1,4 +1,14 @@
 $(document).ready(function() { 
+	// navigation
+	$('header[role="banner"] select option').each(function() {
+		if($(this).val() == window.location) {
+			$(this).attr('selected','selected');
+		};
+	}).parents('select').change(function() {
+		window.location = $(this).val();
+	});
+	
+	
 	// update rendered pattern when user edits the textareas
 	$('#markup textarea').live('keyup', function(e) {
 		$('#pattern-wrap').html($(this).val());
