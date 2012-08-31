@@ -1,4 +1,3 @@
-	<?php get_sidebar(); ?>
 </div> <!-- /wrap -->
 
 <div id="pears-footer">
