@@ -75,10 +75,9 @@
 					process_cat_tree( $cat->term_id );
 				endforeach;
 			endif;
-
-			echo '</ul>';
 		}
 		?>
+		
 	</select>
 
 </header>

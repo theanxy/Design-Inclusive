@@ -38,7 +38,7 @@ $(document).ready(function() {
 	// slider
 	var iframeWidth = $('iframe').css('width');
 	iframeWidth = parseInt(iframeWidth);
-	$("#slider").slider({ min: 160, max: iframeWidth, value: iframeWidth });
+	$("#slider").slider({ min: 260, max: iframeWidth, value: iframeWidth });
 	
 	$("#slider").bind( "slide", function(event, ui) {
 		// console.log(ui.value);

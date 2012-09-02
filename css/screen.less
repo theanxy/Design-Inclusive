@@ -174,7 +174,9 @@ header[role="banner"] {
 }
 #width-control span {
 	display: inline-block;
+	text-align: left;
 	margin-left: 20px;
+	width: 4em;
 	}
 	
 select {
@@ -379,17 +381,20 @@ body.expanded #nav-toggle {
 /* footer 
 --------------------------------------------- */
 
-#pears-footer p.cc {
+body > footer {
+	background: #fff;
+}
+body > footer p.cc {
 	margin: 8px 0 20px 0;
 	font-size: @font-medium;
-	}
-#pears-footer #sb img {
+}
+body > footer #sb img {
 	opacity: .3;
 	.transition(opacity);
-	}
-#pears-footer #sb:hover img {
+}
+body > footer #sb:hover img {
 	opacity: .5;
-	}
+}
 
 /* misc. 
 --------------------------------------------- */
