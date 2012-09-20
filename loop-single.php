@@ -31,28 +31,26 @@
 <style id="s" type="text/css">
 <?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
 </style>
-
-		<div class="group">
-			<div id="markup" class="mod">
-				<h3 class="label">HTML</h3>
-				<textarea class="mod-ta">
+		
+		<div id="markup" class="mod">
+			<h3 class="label">HTML</h3>
+			<textarea class="mod-ta">
 <?php $key="html"; echo get_post_meta($post->ID, $key, true); ?>			
-				</textarea>
-			</div>
-			
-			<div id="style" class="mod">
-				<h3 class="label">CSS</h3>
-				<textarea id="css-code" class="mod-ta">
-<?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
-				</textarea>
-			</div>
-			
-			<?php if($post->post_content != "") {?>
-			<div id="pattern-notes" class="mod">
-				<h3 class="label">Uwagi</h3>
-				<?php the_content(); ?>
-			</div>
-			<?php } ?>
+			</textarea>
 		</div>
+		
+		<div id="style" class="mod">
+			<h3 class="label">CSS</h3>
+			<textarea id="css-code" class="mod-ta">
+<?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
+			</textarea>
+		</div>
+		
+		<?php if($post->post_content != "") {?>
+		<div id="pattern-notes" class="mod">
+			<?php the_content(); ?>
+		</div>
+		<?php } ?>
+		
 
 <?php endwhile; // end of the loop. ?>
