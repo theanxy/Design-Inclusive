@@ -37,8 +37,8 @@ $(document).ready(function() {
 	
 	// slider
 	var docW = $(document).width();
-	docW = parseInt(docW) - 40;
-	$("#slider").slider({ min: 260, max: docW, value: 400 });
+	docW = parseInt(docW);
+	$("#slider").slider({ min: 260, max: docW, value: docW });
 	
 	$("#slider").bind( "slide", function(event, ui) {
 		// console.log(ui.value);
