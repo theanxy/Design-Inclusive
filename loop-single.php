@@ -17,11 +17,6 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-<header>
-	<h3 class="label">Pattern</h3> 
-	<h4><?php the_category(' '); ?> <span class="sep">&rarr;</span> <?php the_title(); ?></h4>
-</header>
-
 <div id="iframe">
 	<iframe src="<?php echo get_template_directory_uri(); ?>/preview.php?p=<?php echo $post->ID ?>"></iframe>
 </div><!-- /iframe -->

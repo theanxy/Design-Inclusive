@@ -101,13 +101,12 @@ table {
 --------------------------------------------- */
 
 body {
-	padding: 0 0 15px 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: @text-color;
 	font-size: 100%;
-/*	background: #e6eaec url(../images/bg.png);*/
-	background: rgba(0,0,0,.6);
-	}
+	background: #e6eaec url(../images/bg.png);
+/*	background: rgba(0,0,0,.6);*/
+}
 
 /* links */
 
@@ -123,11 +122,12 @@ a:hover {
 /* page structure 
 --------------------------------------------- */
 
-div.wrap {
+.single .wrap {
 	position: relative;
+	margin: 40px 0 0;
 	}
 div.main {
-	padding: 20px 0;
+	padding: 20px;
 	position: relative;
 	}
 #nav {
@@ -146,9 +146,12 @@ header[role="banner"] {
 	z-index: 100;
 	margin: 0 0 40px;
 /*	.transition(margin, .4s, ease-in-out);*/
-	background: #e8f4f5;
+/*	background: #e8f4f5;*/
+/*	background: #e6eaec url(../images/bg.png);*/
+	background: #666;
+	color: #fff;
 	.box-shadow(0, 5px, 8px, rgba(0,0,0,.2));
-	}
+}
 #logo {
 	float: left;
 	min-height: 46px;
@@ -282,39 +285,14 @@ div.mod textarea.mod-ta {
 /* pattern notes */
 
 #pattern-notes {
+	background: #fff;
 	clear: both;
     min-height: 100px;
     margin: 25px 0 0;
     padding: 40px 15px 15px 15px;
 	opacity: 1;
     .box-shadow(0, 2px, 12px, rgba(0,0,0,.5);
-
-	background: #fefcea; /* Old browsers */
-	background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%); /* W3C */
-
-}
-#pattern-notes::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 115px;
-    top: -15px;
-    width: 75px;
-    height: 25px;
-    z-index: 2;
-    background-color: rgba(243,245,228,0.5);
-    border: 2px solid rgba(255,255,255,0.5);
-    -webkit-box-shadow: 0 0 5px #888;
-    -moz-box-shadow: 0 0 5px #888;
-    box-shadow: 2px 2px 2px #000;
-    -webkit-transform: rotate(-6deg);
-    -moz-transform: rotate(-6deg);
-    -o-transform: rotate(-6deg);
+	.rounded(8px);
 }
 #pattern-notes.hidden {
 	opacity: .5;
@@ -419,11 +397,19 @@ body.expanded #nav-toggle {
 --------------------------------------------- */
 
 footer[role="contentinfo"] {
-	background: #fff;
+	background: #000;
+	color: #fff;
 	clear: both;
+	margin: 20px 0 0;
+	padding: 20px;
+	.rounded(8px);
 
+	p {
+		margin: 0;
+	}
+	
 	p.cc {
-		margin: 8px 0 20px 0;
+/*		margin: 8px 0 20px 0;*/
 		font-size: @font-medium;
 	}
 }
