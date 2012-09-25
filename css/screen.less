@@ -143,15 +143,11 @@ header[role="banner"] {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 0 20px;
 	z-index: 100;
 	margin: 0 0 40px;
 /*	.transition(margin, .4s, ease-in-out);*/
 /*	background: #e8f4f5;*/
 /*	background: #e6eaec url(../images/bg.png);*/
-	background: #fff;
-	color: #999;
-	.box-shadow(0, 5px, 8px, rgba(0,0,0,.2));
 }
 #logo {
 	float: left;
@@ -162,13 +158,35 @@ header[role="banner"] {
 	color: @text-color;
 	overflow: hidden;
 	font-weight: 100;
+	background: #4e5e5e;
+	padding: 0 20px;
+	color: #c6d5d5;
+	-webkit-border-bottom-right-radius: 10px;
+	   -moz-border-bottom-right-radius: 10px;
+	        border-bottom-right-radius: 10px;
+	.box-shadow(0, 5px, 8px, rgba(0,0,0,.2));
+	
+	&:hover {
+		color: #fff;
 	}
+}
 
 #width-control {
-	height: 2em;
-	margin: 20px auto 0;
+	width: 300px;
+	height: 46px;
+	margin: 0 auto;
+	padding-top: 16px;
+	background: rgba(255,255,255,.8);
+	color: #999;
 	text-align: center;
-	}
+	-webkit-border-bottom-left-radius: 10px;
+	   -moz-border-bottom-left-radius: 10px;
+	        border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	   -moz-border-bottom-right-radius: 10px;
+	        border-bottom-right-radius: 10px;
+	.box-shadow(0, 5px, 8px, rgba(0,0,0,.2));
+}
 #slider {
 	width: 200px;
 	display: inline-block;
@@ -177,10 +195,17 @@ header[role="banner"] {
 	display: inline-block;
 	text-align: left;
 	margin-left: 20px;
-	}
+}
 	
 #pages {
 	float: right;
+	background: #4e5e5e;
+	height: 46px;
+	padding: 0 20px;
+	-webkit-border-bottom-left-radius: 10px;
+	   -moz-border-bottom-left-radius: 10px;
+	        border-bottom-left-radius: 10px;
+	.box-shadow(0, 5px, 8px, rgba(0,0,0,.2));
 	
 	select {
 		display: inline-block;
@@ -399,7 +424,7 @@ body.expanded #nav-toggle {
 --------------------------------------------- */
 
 footer[role="contentinfo"] {
-	background: #000;
+	background: #283333;
 	color: #fff;
 	clear: both;
 	margin: 20px 0 0;
