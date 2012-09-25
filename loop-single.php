@@ -28,14 +28,14 @@
 </style>
 		
 		<div id="markup" class="mod">
-			<h3 class="label">HTML</h3>
+			<h3 class="label">3. Skopiuj HTML</h3>
 			<textarea class="mod-ta">
 <?php $key="html"; echo get_post_meta($post->ID, $key, true); ?>			
 			</textarea>
 		</div>
 		
 		<div id="style" class="mod">
-			<h3 class="label">CSS</h3>
+			<h3 class="label">4. Skopiuj CSS</h3>
 			<textarea id="css-code" class="mod-ta">
 <?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
 			</textarea>
@@ -43,6 +43,7 @@
 		
 		<?php if($post->post_content != "") {?>
 		<div id="pattern-notes" class="mod">
+			<h3 class="label">Notatki</h3>
 			<?php the_content(); ?>
 		</div>
 		<?php } ?>

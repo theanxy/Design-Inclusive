@@ -24,6 +24,7 @@ require_once('../../../wp-load.php');
 
 <body>
 	<div class="wrap">
+		<h2 class="label">2. Sprawdź przykład rozwiązania</h2>
 		<?php $key="html"; echo get_post_meta($_GET['p'], $key, true); ?>
 	</div><!-- /wrap -->
 	
