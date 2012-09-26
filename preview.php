@@ -4,7 +4,7 @@ require_once('../../../wp-load.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pears  / Footer</title>
+<title>Preview</title>
 <link rel="stylesheet/less" media="screen, projection" href="<?php echo get_template_directory_uri(); ?>/css/screen.less" />
 
 <style type="text/css">

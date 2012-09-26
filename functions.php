@@ -514,7 +514,7 @@ function pears_add_meta_box() {
 
     add_meta_box( 
         'pears',
-        'Pears',
+        'Design Inclusive',
         'pears_meta_box',
         'post',
         'normal',

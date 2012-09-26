@@ -43,7 +43,7 @@
 		
 		<?php if($post->post_content != "") {?>
 		<div id="pattern-notes" class="mod">
-			<h3 class="label">Notatki</h3>
+			<h3 class="label">5. Notatki</h3>
 			<?php the_content(); ?>
 		</div>
 		<?php } ?>
