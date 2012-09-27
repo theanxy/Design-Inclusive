@@ -25,7 +25,7 @@
 
 <header role="banner" class="group">
 	<a href="<?php bloginfo('siteurl'); ?>/" id="logo">
-		Design inclusive
+		Projektowanie Inkluzywne
 	</a>
 	
 	<div id="pages">

@@ -158,7 +158,6 @@ header[role="banner"] {
 	font-size: 25px;
 	line-height: 46px;
 	white-space: nowrap;
-	color: @text-color;
 	overflow: hidden;
 	font-weight: 100;
 	background: #4e5e5e;
@@ -209,12 +208,18 @@ header[role="banner"] {
 #pages {
 	float: right;
 	background: #4e5e5e;
+	opacity: .7;
 	height: 46px;
 	padding: 0 20px;
 	-webkit-border-bottom-left-radius: 10px;
 	   -moz-border-bottom-left-radius: 10px;
 	        border-bottom-left-radius: 10px;
 	.box-shadow(0, 5px, 8px, rgba(0,0,0,.2));
+	.transition(opacity);
+	
+	&:hover {
+		opacity: 1;
+	}
 	
 	select {
 		display: inline-block;
@@ -441,7 +446,7 @@ body.expanded #nav-toggle {
 
 footer[role="contentinfo"] {
 	background: #283333;
-	color: #aaa;
+	color: #c6d5d5;
 	clear: both;
 	margin: 20px;
 	padding: 20px;
