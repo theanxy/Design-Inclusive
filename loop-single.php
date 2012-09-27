@@ -17,7 +17,7 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-<h2 class="label">2. Sprawdź przykład rozwiązania</h2>
+<h2 class="label"><em>2.</em> Sprawdź przykład rozwiązania</h2>
 <div id="iframe">
 	<iframe src="<?php echo get_template_directory_uri(); ?>/preview.php?p=<?php echo $post->ID ?>"></iframe>
 </div><!-- /iframe -->
@@ -28,26 +28,25 @@
 <?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
 </style>
 		
+		<?php if($post->post_content != "") {?>
+		<div id="pattern-notes" class="mod">
+			<h3 class="label"><em>3.</em> Notatki</h3>
+			<?php the_content(); ?>
+		</div>
+		<?php } ?>
+		
 		<div id="markup" class="mod">
-			<h3 class="label">3. Skopiuj HTML</h3>
+			<h3 class="label"><em>4.</em> Skopiuj HTML</h3>
 			<textarea class="mod-ta">
 <?php $key="html"; echo get_post_meta($post->ID, $key, true); ?>			
 			</textarea>
 		</div>
 		
 		<div id="style" class="mod">
-			<h3 class="label">4. Skopiuj CSS</h3>
+			<h3 class="label"><em>5.</em> Skopiuj CSS</h3>
 			<textarea id="css-code" class="mod-ta">
 <?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
 			</textarea>
 		</div>
-		
-		<?php if($post->post_content != "") {?>
-		<div id="pattern-notes" class="mod">
-			<h3 class="label">5. Notatki</h3>
-			<?php the_content(); ?>
-		</div>
-		<?php } ?>
-		
 
 <?php endwhile; // end of the loop. ?>
