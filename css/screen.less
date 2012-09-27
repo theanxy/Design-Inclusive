@@ -133,6 +133,7 @@ a:hover {
 div.main {
 	padding: 20px;
 	position: relative;
+	clear: both;
 	}
 #nav {
 	font-size: @font-small;
@@ -228,6 +229,38 @@ header[role="banner"] {
 	}
 }
 
+@media screen and (max-width: 900px) {
+	header[role="banner"] {
+		position: static;
+	}
+	#logo {
+		float: none;
+		display: block;
+		width: 100%;
+		.rounded(0);
+		text-align: center;
+	}
+	#width-control {
+		float: none;
+		width: 100%;
+		.rounded(0);
+	}
+	#pages {
+		float: none;
+		padding: 1em 0;
+		
+		&:hover {
+			opacity: .7;
+		}
+		
+		select {
+			display: block;
+			margin: 0 auto;
+			width: 70%;
+		}
+	}
+}
+
 
 /* iframe preview
 --------------------------------------------- */
@@ -283,6 +316,11 @@ h2.label {
 	margin: 40px 30px 0;
 	width: 100%;
 	text-align: right;
+}
+@media screen and (max-width: 900px) {
+	h2.label {
+		margin-top: 0;
+	}
 }
 div.mod h3.label a {
 	color: #fff;
@@ -556,6 +594,7 @@ a img {
 	div#style.mod {
 		float: none;
 		width: 100%;
+		clear: both;
 		}
 	div.mod h4 {
 		width: auto;
