@@ -168,6 +168,7 @@ header[role="banner"] {
 	   -moz-border-bottom-right-radius: 10px;
 	        border-bottom-right-radius: 10px;
 	.box-shadow(0, 5px, 8px, rgba(0,0,0,.2));
+	.transition(color);
 	
 	&:hover {
 		color: #fff;
@@ -179,7 +180,7 @@ header[role="banner"] {
 	height: 46px;
 	margin: 0 auto;
 	padding-top: 16px;
-	background: rgba(255,255,255,.8);
+	background: rgba(255,255,255,.6);
 	color: #999;
 	text-align: center;
 	-webkit-border-bottom-left-radius: 10px;
@@ -189,6 +190,11 @@ header[role="banner"] {
 	   -moz-border-bottom-right-radius: 10px;
 	        border-bottom-right-radius: 10px;
 	.box-shadow(0, 5px, 8px, rgba(0,0,0,.2));
+	.transition(background);
+	
+	&:hover {
+		background: #fff;
+	}
 }
 #slider {
 	width: 200px;
@@ -222,7 +228,7 @@ header[role="banner"] {
 --------------------------------------------- */
 
 #iframe {
-	margin: 40px 0 0;
+	margin: 0;
 	padding: 0 20px;
 	float: left;
 	width: 100%;
@@ -243,17 +249,29 @@ div.mod {
 	margin: 20px 0;
 	padding: 20px;
 	background: #fff;
+	.transition(background-color, .2s);
+	
+	&#markup:hover,
+	&#style:hover {
+		background: #fff;
 	}
-div.mod h3.label {
+}
+.label {
+	background: #d5e1e1;
 	float: right;
-	margin: -20px 20px 0 0;
+	margin: -30px 20px 0 0;
 	padding: 6px 10px;
 	font-size: @font-small;
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: #4e5e5e;
-	}
+	color: #4e5e5e;	
+}
+h2.label {
+	margin: 40px 30px 0;
+	width: 100%;
+	text-align: right;
+}
 div.mod h3.label a {
 	color: #fff;
 	}
@@ -290,13 +308,13 @@ div#markup.mod {
 	clear: both;
 	float: left;
 	width: 49.5%;
-	background: rgba(255,255,255,.8);
-	}
+	background: #eef3f3;
+}
 div#style.mod {
 	float: right;
 	width: 49.5%;
-	background: rgba(255,255,255,.8);
-	}
+	background: #eef3f3;
+}
 div.mod textarea.mod-ta {	
 	width: 100%;
 	border: none;
@@ -360,10 +378,6 @@ div.mod textarea.mod-ta {
 	margin: 0 0 15px 0;
 	padding: 20px 0;
 	background: #575d60;
-	-webkit-transition: left .4s ease-in-out;
-	-moz-transition: left .4s ease-in-out;
-	-o-transition: left .4s ease-in-out;
-	transition: left .4s ease-in-out;
 	}
 body.expanded #nav {
 	left: -140px;
@@ -427,9 +441,9 @@ body.expanded #nav-toggle {
 
 footer[role="contentinfo"] {
 	background: #283333;
-	color: #fff;
+	color: #aaa;
 	clear: both;
-	margin: 20px 0 0;
+	margin: 20px;
 	padding: 20px;
 	.rounded(8px);
 
@@ -440,6 +454,10 @@ footer[role="contentinfo"] {
 	p.cc {
 		margin: 10px 0 0;
 		font-size: @font-medium;
+	}
+	
+	a {
+		color: #fff;
 	}
 }
 

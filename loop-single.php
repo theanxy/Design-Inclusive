@@ -17,6 +17,7 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
+<h2 class="label">2. Sprawdź przykład rozwiązania</h2>
 <div id="iframe">
 	<iframe src="<?php echo get_template_directory_uri(); ?>/preview.php?p=<?php echo $post->ID ?>"></iframe>
 </div><!-- /iframe -->
