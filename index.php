@@ -17,14 +17,9 @@ get_header(); ?>
 
 		<div id="container">
 			<div id="content" role="main">
+<h1>Projektowanie Inkluzywne</h1>
 
-			<?php
-			/* Run the loop to output the posts.
-			 * If you want to overload this in a child theme then include a file
-			 * called loop-index.php and that will be used instead.
-			 */
-			 get_template_part( 'loop', 'index' );
-			?>
+<p>Przygotuj swoją stronę tak, aby poprawnie wyświetlała się na wszystkich urządzeniach.</p>
 			</div><!-- #content -->
 		</div><!-- #container -->
 
