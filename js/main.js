@@ -1,14 +1,20 @@
 $(document).ready(function() { 
+	// home page navigation
+	$('.intro option:first-child').attr('selected','selected');
+	$('.intro form').submit(function() {
+		window.location = $(this).find('option[selected="selected"]').val();
+		return false;
+	});
+	
 	// navigation
-	$('header[role="banner"] select option').each(function() {
+	$('header[role="banner"] select option').add('.intro option').each(function() {
 		if($(this).val() == window.location) {
 			$(this).attr('selected','selected');
 		};
 	}).parents('select').change(function() {
 		window.location = $(this).val();
 	});
-	
-	
+		
 	// update rendered pattern when user edits the textareas
 	$('#markup textarea').live('keyup', function(e) {
 		$('#pattern-wrap').html($(this).val());
@@ -17,22 +23,6 @@ $(document).ready(function() {
 	$('#style textarea').live('keyup', function(e) {
 		$('div.main style').html($(this).val());
 		$('iframe').contents().find('#preview').html($(this).val());
-	});
-	
-	// auto-select code in textarea when clipboard icon is clicked
-	$('#markup a.clip').click(function(){
-		$('#markup textarea').select();
-		return false;
-	});
-	$('#style a.clip').click(function(){
-		$('#style textarea').select();
-		return false;
-	});
-	
-	// expand/collapse side nav
-	$('#nav-toggle').click(function() {
-		$('body').toggleClass('expanded');
-		return false;
 	});
 	
 	// slider
@@ -44,10 +34,5 @@ $(document).ready(function() {
 		// console.log(ui.value);
 		$('#iframe').css('max-width', ui.value);
 	});
-	
-	// hide pattern notes
-	$('#iframe').hover(function() {
-		$('#pattern-notes').toggleClass('hidden');
-	})
 	
 });
